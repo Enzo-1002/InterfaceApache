@@ -35,6 +35,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         jMnArquivo = new javax.swing.JMenu();
         jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
+        jRadioButtonMenuItem1 = new javax.swing.JRadioButtonMenuItem();
         jMnSobre = new javax.swing.JMenu();
         jMnSair = new javax.swing.JMenu();
 
@@ -101,6 +102,16 @@ public class TelaPrincipal extends javax.swing.JFrame {
         });
         jMnArquivo.add(jCheckBoxMenuItem1);
 
+        jRadioButtonMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_4, java.awt.event.InputEvent.CTRL_MASK));
+        jRadioButtonMenuItem1.setSelected(true);
+        jRadioButtonMenuItem1.setText("Exemplo4");
+        jRadioButtonMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButtonMenuItem1ActionPerformed(evt);
+            }
+        });
+        jMnArquivo.add(jRadioButtonMenuItem1);
+
         jMenuBar1.add(jMnArquivo);
 
         jMnSobre.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/icons8-ponto-de-interrogação.gif"))); // NOI18N
@@ -166,6 +177,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jBtnTeimoso.setBounds(50, 30, 100, 25);
     }//GEN-LAST:event_jBtnTeimosoMouseExited
 
+    private void jRadioButtonMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonMenuItem1ActionPerformed
+        Exemplo4 tela =new Exemplo4();
+        tela.setVisible(true);
+    }//GEN-LAST:event_jRadioButtonMenuItem1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -210,5 +226,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu jMnSair;
     private javax.swing.JMenu jMnSobre;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem1;
     // End of variables declaration//GEN-END:variables
 }

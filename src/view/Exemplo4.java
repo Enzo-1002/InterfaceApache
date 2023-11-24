@@ -137,16 +137,23 @@ public class Exemplo4 extends javax.swing.JFrame {
     }//GEN-LAST:event_jCkbInglesActionPerformed
 
     private void jBtnVerificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnVerificarActionPerformed
-        if(jCkbInformática.isSelected() && jCkbIngles.isSelected()){
-            JOptionPane.showMessageDialog(null, "Os botões 1 e 2 estão selecionados.");
+        if(!jCkbIngles.isSelected() && !jCkbInformática.isSelected()){
+            JOptionPane.showMessageDialog(null, "Nenhum Curso Selecionado!");
         }
-        else if(jCkbInformática.isSelected())
-            JOptionPane.showMessageDialog(null, "O botão 1 está selecionado.");
-        else if(jCkbIngles.isSelected())
-            JOptionPane.showMessageDialog(null, "O botão 2 está selecionado.");
-        else
-            JOptionPane.showMessageDialog(null, "Nenhum botão está selecionado.");
-
+        else{
+            String selecao="Selecionados: ";
+            if(jCkbInformática.isSelected()){
+                selecao+="\n"+jCkbInformática.getText();
+            }
+            if(jCkbIngles.isSelected()){
+                selecao+="\n"+jCkbIngles.getText();
+            }      
+            if(!jCkbIngles.isSelected() && !jCkbInformática.isSelected()){
+                JOptionPane.showMessageDialog(null, "Nenhum Curso Selecionado!");
+            }
+            JOptionPane.showMessageDialog(null, selecao);
+        }
+        
     }//GEN-LAST:event_jBtnVerificarActionPerformed
 
     private void jBtnDesmarcarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnDesmarcarActionPerformed
