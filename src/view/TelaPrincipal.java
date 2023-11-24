@@ -36,6 +36,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMnArquivo = new javax.swing.JMenu();
         jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
         jRadioButtonMenuItem1 = new javax.swing.JRadioButtonMenuItem();
+        jRadioButtonMenuItem2 = new javax.swing.JRadioButtonMenuItem();
         jMnSobre = new javax.swing.JMenu();
         jMnSair = new javax.swing.JMenu();
 
@@ -112,6 +113,16 @@ public class TelaPrincipal extends javax.swing.JFrame {
         });
         jMnArquivo.add(jRadioButtonMenuItem1);
 
+        jRadioButtonMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_5, java.awt.event.InputEvent.CTRL_MASK));
+        jRadioButtonMenuItem2.setSelected(true);
+        jRadioButtonMenuItem2.setText("Exemplo5");
+        jRadioButtonMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButtonMenuItem2ActionPerformed(evt);
+            }
+        });
+        jMnArquivo.add(jRadioButtonMenuItem2);
+
         jMenuBar1.add(jMnArquivo);
 
         jMnSobre.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/icons8-ponto-de-interrogação.gif"))); // NOI18N
@@ -182,6 +193,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
         tela.setVisible(true);
     }//GEN-LAST:event_jRadioButtonMenuItem1ActionPerformed
 
+    private void jRadioButtonMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonMenuItem2ActionPerformed
+        Exemplo5 tela = new Exemplo5();
+        tela.setVisible(true);
+    }//GEN-LAST:event_jRadioButtonMenuItem2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -227,5 +243,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu jMnSobre;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem1;
+    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem2;
     // End of variables declaration//GEN-END:variables
 }

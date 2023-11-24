@@ -148,9 +148,7 @@ public class Exemplo4 extends javax.swing.JFrame {
             if(jCkbIngles.isSelected()){
                 selecao+="\n"+jCkbIngles.getText();
             }      
-            if(!jCkbIngles.isSelected() && !jCkbInformática.isSelected()){
-                JOptionPane.showMessageDialog(null, "Nenhum Curso Selecionado!");
-            }
+            
             JOptionPane.showMessageDialog(null, selecao);
         }
         
