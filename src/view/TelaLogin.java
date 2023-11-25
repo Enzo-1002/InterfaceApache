@@ -165,6 +165,9 @@ public class TelaLogin extends javax.swing.JFrame {
             this.dispose();
         }else{
             JOptionPane.showMessageDialog(null, "Usuário ou senha incorreto.");
+            jTxtLogin.setText(null);
+            jTxtSenha.setText("");
+            jTxtLogin.requestFocus();
         }
     }//GEN-LAST:event_jBtnLogarKeyPressed
 

@@ -37,7 +37,7 @@ public class Exemplo4 extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu2 = new javax.swing.JMenu();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jCkbInformática.setText("Informática");
         jCkbInformática.addActionListener(new java.awt.event.ActionListener() {
